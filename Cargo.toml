@@ -1,0 +1,24 @@
+[package]
+name = "hostsmod"
+description = "CLI tool to safely modify /etc/hosts and parser library for the file."
+version = "0.2.2"
+authors = ["moschroe"]
+edition = "2018"
+license = "BSD-3-Clause"
+keywords = ["hosts"]
+categories = ["command-line-utilities", "config", "parser-implementations"]
+repository = "https://github.com/moschroe/hostsmod"
+include = [
+    "src/**/*.rs",
+    "Cargo.toml",
+    "README.md",
+    "LICENSE"
+]
+
+[dependencies]
+structopt = "0.3.21"
+serde = { version = "1", features = ["derive"] }
+serde_yaml = "0.8.17"
+nom = "6"
+users = "0.11.0"
+hostname = "0.3.1"
